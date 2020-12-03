@@ -14,15 +14,21 @@ void setup() {
   size(800, 800);
 
   printArray(pinde);
+  
+  display(0, pinde);
 }
-void display(int plads, int[] pinde) {
-  int value = pinde[0];
-  rect(10*plads, height, 10, -20*value);
-  if (plads<pinde.length) {
-    display(plads+1, pinde);
+
+void display(int index, int[] pinde) {
+  int value = pinde[index];
+  rect(50*index, height, 50, -40*value);
+  if (index<pinde.length-1) {
+    display(index+1, pinde);
   }
 }
 
+void shuffle(){
+
+}
+
   void draw() {
-  display(0, pinde[1]);
 }
