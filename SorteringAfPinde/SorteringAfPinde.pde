@@ -12,11 +12,13 @@ int plads = 0;
 
 void setup() {
   size(800, 800);
-
   printArray(pinde);
-  
   display(0, pinde);
 }
+
+void draw() {
+}
+
 
 void display(int index, int[] pinde) {
   int value = pinde[index];
@@ -26,9 +28,10 @@ void display(int index, int[] pinde) {
   }
 }
 
-void shuffle(){
-
+void sortering() {
+  
 }
 
-  void draw() {
+void generate() {
+  
 }
